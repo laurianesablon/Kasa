@@ -1,3 +1,4 @@
+$salmon: #ff6060;
 body, html {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
@@ -10,17 +11,17 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
-}
-header .logo {
-  width: 145px;
-}
-header ul {
-  color: #ff6060;
-  display: flex;
-  list-style-type: none;
-  font-weight: 500;
-  gap: 26px;
-  font-size: 12px;
+  .logo {
+    width: 145px;
+  }
+  ul {
+    color: $salmon;
+    display: flex;
+    list-style-type: none;
+    font-weight: 500;
+    gap: 26px;
+    font-size: 12px;
+  }
 }
 
 footer {
@@ -32,34 +33,40 @@ footer {
   align-items: center;
   padding-top: 66px;
   padding-bottom: 66px;
-}
-footer .LOGO_footer {
-  width: 122px;
-  height: 39.444px;
-}
-footer p {
-  font-size: 12px;
-  width: 120px;
-  text-align: center;
+
+  .LOGO_footer {
+    width: 122px;
+    height: 39.444px;
+  }
+  p{
+    font-size: 12px;
+    width: 120px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 800px) {
   body {
     margin: 45px;
   }
-  header ul {
-    font-size: 24px;
+  header {
+    ul {
+      font-size: 24px;
+      li:hover {
+        text-decoration: underline;
+      }
+    }
   }
-  header ul li:hover {
-    text-decoration: underline;
-  }
-  footer p {
-    width: 100%;
-    padding: 10px;
+  footer {
+    p {
+      width: 100%;
+      padding: 10px;
+    }
   }
 }
+
 @media (max-width: 600px) {
   header ul {
     text-transform: uppercase;
   }
-}/*# sourceMappingURL=App.css.map */
+}
