@@ -6,8 +6,9 @@ function Header() {
       <img className="logo" src="LOGO.svg" alt="Logo" />
       <nav>
         <ul>
-          <li>Accueil</li>
-          <li>A Propos</li>
+          <a className="home" href="/"><li>Accueil</li></a>
+          <a className="about" href="/about"><li>A Propos</li></a>
+          
         </ul>
       </nav>
     </header>

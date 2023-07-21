@@ -1,0 +1,65 @@
+/*---CARDS---*/
+.discoveryCard {
+    height: 111px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: lightgray url(/src/img/IMG.jpg) no-repeat 50% / cover;
+    //background-position: bottom 423px right 335px;
+    font-weight: 500;
+  
+    p {
+      color: #fff;
+      font-size: 150%;
+      padding-top: 50px;
+      padding-left: 10px;
+  
+    }
+  }
+  .cards {
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    gap: 25px;
+    .card {
+      width: 335px;
+      height: 255px;
+      background: linear-gradient(180deg, #FF6060 0%, rgb(0, 0, 0) 200%);
+      background-size: cover;
+      border-radius: 10px;
+      &_title {
+        color: rgb(255, 255, 255);
+        margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 100px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media (min-width: 820px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #f6f6f6;
+        gap: 50px;
+        padding-top: 5%;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        .card {
+          width: 340px;
+          height: 340px;
+          flex-shrink: 0;
+          &_title {
+            margin-top: 270px;
+          }
+        }
+      }
+  }
+
+  /*---LARGE SCREEN---*/
+

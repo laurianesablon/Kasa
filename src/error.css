@@ -1,0 +1,25 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error_404 {
+  color: #ff6060;
+  font-weight: 800;
+  font-size: 96px;
+}
+
+.oups {
+  color: #ff6060;
+  font-size: 18px;
+  text-align: center;
+}
+
+.error_link_accueil {
+  color: #ff6060;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-color: #ff6060;
+}/*# sourceMappingURL=error.css.map */

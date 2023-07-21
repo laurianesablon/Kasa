@@ -1,28 +1,35 @@
-$salmon: #ff6060;
-body, html {
+body,
+html {
   font-family: "Montserrat", sans-serif;
-  margin: 0px;
+  margin-top: 10px;
   padding: 0px;
+ 
 }
-
+/*---HEADER---*/
 header {
-  margin: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-bottom: 10px;
   .logo {
     width: 145px;
   }
   ul {
-    color: $salmon;
+    color: #ff6060;
     display: flex;
     list-style-type: none;
     font-weight: 500;
     gap: 26px;
     font-size: 12px;
+    a {
+      text-decoration: none;
+      color: #ff6060;
+      
+    }
   }
 }
+
+/*---FOOTER---*/
 
 footer {
   background-color: black;
@@ -33,23 +40,25 @@ footer {
   align-items: center;
   padding-top: 66px;
   padding-bottom: 66px;
-
-  .LOGO_footer {
-    width: 122px;
-    height: 39.444px;
-  }
-  p{
-    font-size: 12px;
-    width: 120px;
-    text-align: center;
-  }
+  margin-top: 20px;
+}
+footer .LOGO_footer {
+  width: 122px;
+  height: 39.444px;
+}
+footer p {
+  font-size: 12px;
+  width: 120px;
+  text-align: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
   body {
     margin: 45px;
   }
+
   header {
+    justify-content: space-between;
     ul {
       font-size: 24px;
       li:hover {
@@ -57,16 +66,16 @@ footer {
       }
     }
   }
-  footer {
-    p {
-      width: 100%;
-      padding: 10px;
-    }
+
+  footer p {
+    width: 100%;
+    padding: 10px;
   }
 }
 
+/*---MOBILE---*/
 @media (max-width: 600px) {
   header ul {
     text-transform: uppercase;
   }
-}
+} /*# sourceMappingURL=App.css.map */
