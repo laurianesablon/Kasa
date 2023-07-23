@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../layout";
-import Collapse from "../../components/collapse";
+import Layout from "./layout";
+import Collapse from "../components/collapse";
 
 export default function About() {
   const CollapseTitle = ["Fiabilité", "Respect", "Service", "Sécurité"];

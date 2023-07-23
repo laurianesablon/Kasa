@@ -1,10 +1,9 @@
 import React from "react";
-import Layout from "../layout";
-import Cards from "../../components/cards";
-import data from "../../data.js"
+import Layout from "./layout";
+import Cards from "../components/cards";
+import data from "../data.js"
 
 
-console.log(data.data[0].cover)
 const cardItems = [];
 
 for (let i = 0; i < 20; i++) {

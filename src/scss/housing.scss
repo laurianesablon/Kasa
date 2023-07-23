@@ -1,0 +1,38 @@
+.carrousel {
+  position: relative;
+}
+
+.carrousel_img {
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  position: relative;
+}
+
+.carroussel_arrow_right {
+  display: flex;
+  position: absolute;
+  top: 47%;
+  right: 2%;
+  width: 12px;
+  height: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.carroussel_arrow_left {
+  display: flex;
+  position: absolute;
+  top: 47%;
+  left: 2%;
+  width: 12px;
+  height: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  left: 50px;
+}

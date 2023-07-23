@@ -3,11 +3,11 @@ import "./App.css";
 import "./error.css";
 import "./home.css";
 import "./about.css";
-
-import Home from "./pages/home/home";
-import Error from "./pages/error/error";
-import About from "./pages/about/about";
-import Housing from "./pages/housing/housing";
+import "./housing.css";
+import Home from "./pages/home";
+import Error from "./pages/error";
+import About from "./pages/about";
+import Housing from "./pages/housing";
 import { BrowserRouter, Routes, Route , Navigate} from "react-router-dom";
 
 

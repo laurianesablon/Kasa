@@ -1,0 +1,17 @@
+.carrousel {
+  position: relative;
+}
+
+.carrousel_img {
+  height: 415px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  left: 50px;
+}/*# sourceMappingURL=housing.css.map */
