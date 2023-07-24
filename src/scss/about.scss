@@ -1,47 +1,43 @@
 .displayNone {
-    display: none;
+  display: none;
 }
 
 .arrowDown {
-    transform: rotate(-180deg);
-    transition: 500ms;
+  transform: rotate(-180deg);
+  transition: 500ms;
 }
-.collapse{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.collapse {
+  width: 100%;
 }
 .collapseTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #ff6060;
-    height: 44px;
-    width: 90%;
-    border-radius: 5px;
-    margin-top: 38px;
-    p {
-        font-size: 24px;
-        color: white;
-        margin: 0px;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ff6060;
+  height: 44px;
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 38px;
+  p {
+    font-size: 24px;
+    color: white;
+    margin: 0px;
+  }
 }
-.collapseContent{
-    width: 90%;  
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #e7e7e760; 
-    color:#ff6060;
-    border-radius: 3px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+.collapseContent {
+  width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #e7e7e760;
+  color: #ff6060;
+  border-radius: 3px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 .collapseContent.collapsed {
-    max-height: 1000px;
-    transition: max-height 0.3s ease;
-  }
+  max-height: 1000px;
+  transition: max-height 0.3s ease;
+}

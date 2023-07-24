@@ -1,7 +1,6 @@
 .carrousel {
   position: relative;
 }
-
 .carrousel_img {
   height: 415px;
   width: 100%;
@@ -10,8 +9,64 @@
   border-radius: 25px;
   position: relative;
 }
-
-.arrow {
+.carrousel_arrow_right {
+  display: flex;
+  position: absolute;
+  top: 43%;
+  right: 2%;
+  height: 15%;
+  z-index: 10;
+  cursor: pointer;
+}
+.carrousel_arrow_left {
+  display: flex;
+  position: absolute;
+  top: 43%;
+  left: 2%;
+  height: 15%;
+  z-index: 10;
+  cursor: pointer;
+}
+.carrousel_arrow_left .arrow {
   position: absolute;
   left: 50px;
+}
+.carrousel_position {
+  position: absolute;
+  top: 87%;
+  right: 48%;
+  z-index: 10;
+  color: white;
+  font-size: 18px;
+}
+
+.housing_collapse {
+  display: flex;
+  width: 100%;
+}
+
+.tags_and_stars {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #ff6060;
+  width: 115px;
+  font-size: 14px;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
 }/*# sourceMappingURL=housing.css.map */
