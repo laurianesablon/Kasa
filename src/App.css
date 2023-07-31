@@ -1,78 +1,46 @@
-body,
-html {
-  font-family: "Montserrat", sans-serif;
-  margin-top: 10px;
-  padding: 0px;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 27px 20px;
 }
 
-/*---HEADER---*/
 header {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
 }
-header .logo {
-  width: 145px;
+header nav {
+  display: flex;
 }
-header ul {
-  color: #ff6060;
+header nav ul {
+  font-family: "Montserrat";
   display: flex;
   list-style-type: none;
   font-weight: 500;
   gap: 26px;
   font-size: 12px;
+  align-items: center;
+  justify-content: center;
 }
-header ul a {
+header nav ul a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #ff6060;
 }
-
-/*---FOOTER---*/
-footer {
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding-top: 66px;
-  padding-bottom: 66px;
-  margin-top: 20px;
+header nav ul a li:hover {
+  text-decoration: underline;
 }
-
-footer .LOGO_footer {
-  width: 122px;
-  height: 39.444px;
+header .logo {
+  width: 145px;
 }
 
 footer p {
-  font-size: 12px;
-  width: 120px;
-  text-align: center;
+  width: 100%;
+  padding: 10px;
 }
 
-@media (min-width: 820px) {
-  body {
-    margin: 45px;
-  }
-  header {
-    justify-content: space-between;
-  }
-  header ul {
-    font-size: 24px;
-  }
-  header ul li:hover {
-    text-decoration: underline;
-  }
-  footer p {
-    width: 100%;
-    padding: 10px;
-  }
-}
 /*---MOBILE---*/
-@media (max-width: 600px) {
-  header ul {
-    text-transform: uppercase;
-  }
-} /*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=App.css.map */

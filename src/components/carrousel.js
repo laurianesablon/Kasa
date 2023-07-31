@@ -7,7 +7,9 @@ function Carrousel({data}) {
     const [i, setI] = useState(0);
   
     // Tableau de diapositives mémorisé en fonction de la prop data
-    const slides = useMemo(() => [data?.data[0]?.pictures?.map((picture) => picture)], [data]);
+    const slides = useMemo(() => [data?.pictures?.map((picture) => picture)], [data]);
+    let slides_lenght = slides[0].length;
+    console.log(slides_lenght);
   
     const handleLeftArrowClick = useCallback(() => {
       setI((prevI) => (prevI === 0 ? slides[0].length - 1 : (prevI - 1) % slides[0].length));
@@ -35,7 +37,7 @@ function Carrousel({data}) {
         <img className="carrousel_img" src={slides[0][i]} />
         <img className="carrousel_arrow_left arrow" alt="left" src={arrowLeft} />
         <img className="carrousel_arrow_right arrow" alt="right" src={arrowRight} />
-        <p className='carrousel_position'>{i}/4</p>
+        <p className='carrousel_position'>{i+1}/{slides_lenght}</p>
       </div>
     );
   }

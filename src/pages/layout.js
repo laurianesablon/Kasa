@@ -1,9 +1,14 @@
 import React from "react";
+import Logo from "../img/LOGO.svg";
+import LogoFooter from "../img/LOGO_footer.svg";
 
 function Header() {
   return (
     <header>
-      <img className="logo" src="LOGO.svg" alt="Logo" />
+      <a href="/">
+        <img className="logo" src={Logo} alt="Logo" />
+      </a>
+      
       <nav>
         <ul>
           <a className="home" href="/"><li>Accueil</li></a>
@@ -12,13 +17,15 @@ function Header() {
         </ul>
       </nav>
     </header>
+
   );
 }
 
 function Footer() {
   return (
+
     <footer>
-      <img className="LOGO_footer" src="LOGO_footer.svg" alt="Logo" />
+      <img className="LOGO_footer" src={LogoFooter} alt="Logo" />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
@@ -28,7 +35,9 @@ export default function Layout({children}) {
   return (
     <div>
       <Header />
+      <main>
       {children}
+      </main>
       <Footer />
     </div>
   );

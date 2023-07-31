@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Collapse({ CollapseTitle, CollapseContent }) {
+export default function Collapse({ collapse_title, collapse_content }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleCollapse = () => {
@@ -9,8 +9,8 @@ export default function Collapse({ CollapseTitle, CollapseContent }) {
 
   return (
     <div className="collapse">
-      <div className="collapseTitle" onClick={toggleCollapse}>
-        <p>{CollapseTitle}</p>
+      <div className="collapse_title" onClick={toggleCollapse}>
+        <p>{collapse_title}</p>
         <svg
           className={`${isCollapsed ? "arrowDown" : "collapsed"}`}
           width="33"
@@ -28,8 +28,8 @@ export default function Collapse({ CollapseTitle, CollapseContent }) {
           </g>
         </svg>
       </div>
-      <div className={`collapseContent ${isCollapsed ? "collapsed" : "displayNone"}`}>
-        <p>{CollapseContent}</p>
+      <div className={`collapse_content ${isCollapsed ? "collapsed" : "displayNone"}`}>
+        <p>{collapse_content}</p>
       </div>
     </div>
   );

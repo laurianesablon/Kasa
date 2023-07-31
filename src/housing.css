@@ -40,16 +40,41 @@
   font-size: 18px;
 }
 
+.housing_info_container {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+}
+.housing_info_container .rate-host-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.housing_info_container .rate-host-container .host {
+  margin-top: 21px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.housing_info_container .rate-host-container .host_name {
+  font-size: 18px;
+  font-weight: 500;
+  width: 73px;
+  text-align: end;
+}
+.housing_info_container .rate-host-container .host_picture {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.housing_info_container .rate-host-container .stars {
+  display: flex;
+  gap: 5px;
+}
+
 .housing_collapse {
   display: flex;
   width: 100%;
-}
-
-.tags_and_stars {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  text-align: center;
 }
 
 .tags {
@@ -64,9 +89,4 @@
   border-radius: 10px;
   color: white;
   padding: 5px;
-}
-
-.stars {
-  display: flex;
-  gap: 5px;
 }/*# sourceMappingURL=housing.css.map */
