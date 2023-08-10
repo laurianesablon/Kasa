@@ -1,10 +1,5 @@
 import React from "react";
-import "./App.css";
-import "./error.css";
-import "./home.css";
-import "./about.css";
-import "./housing.css";
-import "./boilerplate.css"
+import "./scss/dist/main.css";
 import Home from "./pages/home";
 import Error from "./pages/error";
 import About from "./pages/about";

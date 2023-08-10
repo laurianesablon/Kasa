@@ -44,25 +44,24 @@
   }
 }
 
-// @media (min-width: 820px) {
-
-//   .cards {
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     background-color: #f6f6f6;
-//     gap: 50px;
-//     padding-top: 5%;
-//     padding-bottom: 20px;
-//     margin-bottom: 25px;
-//     .card {
-//       width: 340px;
-//       height: 340px;
-//       flex-shrink: 0;
-//       &_title {
-//         margin-top: 270px;
-//       }
-//     }
-//   }
-// }
+@media (min-width: 930px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f6f6f6;
+    gap: 50px;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    .card {
+      width: 340px;
+      height: 340px;
+      flex-shrink: 0;
+      &_title {
+        margin-top: 270px;
+      }
+    }
+  }
+}
 

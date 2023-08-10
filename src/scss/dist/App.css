@@ -1,3 +1,8 @@
+body {
+  font-family: "Montserrat";
+  margin: 0px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -37,10 +42,38 @@ header .logo {
   width: 145px;
 }
 
-footer p {
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  margin-top: 20px;
   width: 100%;
-  padding: 10px;
+  margin: 0px;
 }
 
+footer .LOGO_footer {
+  width: 122px;
+  height: 39.444px;
+}
+
+footer p {
+  font-size: 12px;
+  width: 120px;
+  text-align: center;
+}
+
+@media (min-width: 930px) {
+  header {
+    margin: 27px 100px;
+  }
+  main {
+    margin: 27px 100px;
+  }
+}
 /*---MOBILE---*/
 /*# sourceMappingURL=App.css.map */

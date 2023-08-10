@@ -22,13 +22,14 @@ export default function Housing() {
   // Destructure the properties from the housing object
   const { title, location, description, equipments, rating, tags, host } =
     housing;
-  console.log(host);
+  console.log(equipments);
   // Map the tags array to create Tag components
   const renderedTags = tags.map((tag, index) => <Tag key={index} tag={tag} />);
 
+
   return (
     <Layout>
-      <div>
+      <div class="main">
         <Carrousel data={housing} />
         <div className="housing_info_container">
            <div className="title-tags-container">

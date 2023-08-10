@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route , Navigate} from "react-router-dom";
-import Housing from "./housing";
+import React from "react";
 import Layout from "./layout";
 import Cards from "../components/cards";
 import data from "../data.js"
 
 const cardItems = [];
-let url_id = "";
 
 for (let i = 0; i < 20; i++) {
   const cardImage = {

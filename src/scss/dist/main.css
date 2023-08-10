@@ -1,0 +1,341 @@
+/*---CARDS---*/
+.discoveryCard {
+  height: 111px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: lightgray url(/src/img/IMG.jpg) no-repeat 50%/cover;
+  font-weight: 500;
+  width: 100%;
+}
+.discoveryCard p {
+  color: #fff;
+  font-size: 150%;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.cards {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  background-color: #ffffff;
+  gap: 25px;
+}
+.cards .card {
+  width: 100%;
+  height: 255px;
+  background: linear-gradient(180deg, #ff6060 0%, rgb(0, 0, 0) 200%);
+  background-size: cover;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.cards .card_title {
+  color: rgb(255, 255, 255);
+  margin-top: 200px;
+  margin-left: 10px;
+  margin-right: 100px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (min-width: 930px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f6f6f6;
+    gap: 50px;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+  .cards .card {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+  }
+  .cards .card_title {
+    margin-top: 270px;
+  }
+}
+body {
+  font-family: "Montserrat";
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 27px 20px;
+}
+
+header {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+}
+header nav ul {
+  font-family: "Montserrat";
+  display: flex;
+  list-style-type: none;
+  font-weight: 500;
+  gap: 26px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ff6060;
+}
+header nav ul a li:hover {
+  text-decoration: underline;
+}
+header .logo {
+  width: 145px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  margin-top: 20px;
+  width: 100%;
+  margin: 0px;
+}
+
+footer .LOGO_footer {
+  width: 122px;
+  height: 39.444px;
+}
+
+footer p {
+  font-size: 12px;
+  width: 120px;
+  text-align: center;
+}
+
+@media (min-width: 930px) {
+  header {
+    margin: 27px 100px;
+  }
+  main {
+    margin: 27px 100px;
+  }
+}
+/*---MOBILE---*/
+
+.error_404 {
+  color: #ff6060;
+  font-weight: 800;
+  font-size: 96px;
+}
+
+.oups {
+  color: #ff6060;
+  font-size: 18px;
+  text-align: center;
+}
+
+.error_link_accueil {
+  color: #ff6060;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-color: #ff6060;
+}
+
+.carrousel {
+  position: relative;
+}
+.carrousel_img {
+  height: 415px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  position: relative;
+}
+.carrousel_arrow_right {
+  display: flex;
+  position: absolute;
+  top: 43%;
+  right: 2%;
+  height: 15%;
+  z-index: 10;
+  cursor: pointer;
+}
+.carrousel_arrow_left {
+  display: flex;
+  position: absolute;
+  top: 43%;
+  left: 2%;
+  height: 15%;
+  z-index: 10;
+  cursor: pointer;
+}
+.carrousel_arrow_left .arrow {
+  position: absolute;
+  left: 50px;
+}
+.carrousel_position {
+  position: absolute;
+  top: 87%;
+  right: 48%;
+  z-index: 10;
+  color: white;
+  font-size: 18px;
+}
+
+.housing_info_container {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+}
+.housing_info_container .tags {
+  display: flex;
+  gap: 10px;
+}
+.housing_info_container .tags .tag {
+  display: flex;
+  background-color: #ff6060;
+  width: 115px;
+  font-size: 14px;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.housing_info_container .rate-host-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.housing_info_container .rate-host-container .host {
+  margin-top: 21px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.housing_info_container .rate-host-container .host_name {
+  font-size: 18px;
+  font-weight: 500;
+  width: 73px;
+  text-align: end;
+}
+.housing_info_container .rate-host-container .host_picture {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.housing_info_container .rate-host-container .stars {
+  display: flex;
+  gap: 5px;
+}
+.housing_info_container .rate-host-container .stars .star {
+  height: 35px;
+}
+
+.housing_collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 930px) {
+  .main {
+    width: 100%;
+  }
+  .main .housing_info_container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main .housing_info_container .rate-host-container {
+    flex-direction: column;
+  }
+  .main .housing_collapse {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+.about_img {
+  height: 111px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.displayNone {
+  display: none;
+}
+
+.arrowDown {
+  transform: rotate(-180deg);
+  transition: 500ms;
+}
+
+.about_collapse {
+  width: 100%;
+}
+.about_collapse .collapse_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.about_collapse .collapse_container .collapse {
+  width: 90%;
+}
+.about_collapse .collapse_container .collapse_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ff6060;
+  height: 44px;
+  border-radius: 5px;
+  margin-top: 38px;
+  width: 95%;
+}
+.about_collapse .collapse_container .collapse_title p {
+  font-size: 24px;
+  color: white;
+  margin: 0px;
+  font-weight: 500;
+}
+.about_collapse .collapse_container .collapse_content {
+  margin: 0 auto;
+  width: 95%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(231, 231, 231, 0.3764705882);
+  color: #ff6060;
+  border-radius: 3px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.about_collapse .collapse_container .collapse_content.collapsed {
+  max-height: 1000px;
+  transition: max-height 0.3s ease;
+}/*# sourceMappingURL=main.css.map */

@@ -38,4 +38,25 @@
   margin-right: 100px;
   font-size: 18px;
   font-weight: 500;
+}
+
+@media (min-width: 930px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f6f6f6;
+    gap: 50px;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+  .cards .card {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+  }
+  .cards .card_title {
+    margin-top: 270px;
+  }
 }/*# sourceMappingURL=home.css.map */
