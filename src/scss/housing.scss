@@ -50,7 +50,7 @@
     display: flex;
     gap: 10px;
     .tag {
-      display:flex;
+      display: flex;
       background-color: #ff6060;
       width: 115px;
       font-size: 14px;
@@ -59,7 +59,6 @@
       padding: 5px;
       align-items: center;
       justify-content: center;
-
     }
   }
   .rate-host-container {
@@ -94,17 +93,58 @@
   }
 }
 
-  .housing_collapse {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
- 
+.housing_collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
+  .collapse {
+    width: 100%;
+    &_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #ff6060;
+      height: 44px;
+      border-radius: 5px;
+      margin-top: 20px;
+      p {
+        font-size: 24px;
+        color: white;
+        margin: 0px;
+        font-weight: 500;
+      }
+    }
+    &_content {
+      margin: 0 auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #e7e7e760;
+      color: #ff6060;
+      border-radius: 3px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    &_content.collapsed {
+      max-height: 1000px;
+      transition: max-height 0.3s ease;
+      p{
+        width: 100%;
+      }
+      ul{
+        padding-inline-start: 10px;
+        li{
+        list-style-type: none;
+      }
+      }
+      
+    }
   }
-
-
-
+}
 
 @media (min-width: 930px) {
   .main {
@@ -121,7 +161,6 @@
       flex-direction: row;
       gap: 15px;
       align-items: flex-start;
-     
     }
   }
 }
