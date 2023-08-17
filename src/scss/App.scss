@@ -2,21 +2,24 @@ body {
   font-family: "Montserrat";
   margin: 0px;
 }
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 27px 20px;
 }
+
 header {
   display: flex;
-
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   justify-content: space-between;
+
   nav {
     display: flex;
+
     ul {
       font-family: "Montserrat";
       display: flex;
@@ -26,16 +29,19 @@ header {
       font-size: 12px;
       align-items: center;
       justify-content: center;
+
       a {
         text-transform: uppercase;
         text-decoration: none;
         color: #ff6060;
+
         li:hover {
           text-decoration: underline;
         }
       }
     }
   }
+
   .logo {
     width: 145px;
   }
@@ -54,10 +60,12 @@ footer {
   width: 100%;
   margin: 0px;
 }
+
 footer .LOGO_footer {
   width: 122px;
   height: 39.444px;
 }
+
 footer p {
   font-size: 12px;
   width: 120px;
@@ -65,80 +73,18 @@ footer p {
 }
 
 @media (min-width: 930px) {
-  header {
+  main {
     margin: 27px 100px;
   }
-  main {
-  margin: 27px 100px;
+  header {
+    margin: 27px 100px;
+    nav {
+      ul {
+        font-size: 24px;
+      }
+      a {
+        text-transform: capitalize !important;
+      }
+    }
   }
-
-
 }
-// body,
-// html {
-//   font-family: "Montserrat", sans-serif;
-//   padding: 0px;
-//   margin: 0px;
-//   height: 100%;
-
-// }
-// /*---HEADER---*/
-// header {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   padding-bottom: 10px;
-//     margin-top: 45px;
-//     margin-left: 100px;
-//     margin-right: 100px;
-//     justify-content: space-between;
-//     ul {
-//       font-size: 24px;
-//       li:hover {
-//         text-decoration: underline;
-//       }
-//     }
-//   .logo {
-//     width: 145px;
-//   }
-//   ul {
-//     color: #ff6060;
-//     display: flex;
-//     list-style-type: none;
-//     font-weight: 500;
-//     gap: 26px;
-//     font-size: 12px;
-//     a {
-//       text-decoration: none;
-//       color: #ff6060;
-
-//     }
-//   }
-// }
-
-// /*---FOOTER---*/
-
-// footer {
-//   background-color: black;
-//   color: white;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-end;
-//   align-items: center;
-//   padding-top: 66px;
-//   padding-bottom: 66px;
-//   margin-top: 20px;
-// }
-// footer .LOGO_footer {
-//   width: 122px;
-//   height: 39.444px;
-// }
-// footer p {
-//   font-size: 12px;
-//   width: 120px;
-//   text-align: center;
-// }
-
-/*---MOBILE---*/
-
-/*# sourceMappingURL=App.css.map */

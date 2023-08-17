@@ -1,13 +1,13 @@
 .about_img {
-  height: 111px;
+  height: 336px;
   border-radius: 10px;
   margin-bottom: 20px;
   width: 100%;
+  background: lightgray url(/src/img/IMG_about.png) no-repeat 50% / cover;
 }
 .displayNone {
   display: none;
 }
-
 .arrowDown {
   transform: rotate(-180deg);
   transition: 500ms;
@@ -32,8 +32,7 @@
         background-color: #ff6060;
         height: 44px;
         border-radius: 5px;
-        margin-top: 38px;
-        width: 95%;
+        margin-top: 20px;
         p {
           font-size: 24px;
           color: white;
@@ -43,7 +42,6 @@
       }
       &_content {
         margin: 0 auto;
-        width: 95%;
         padding-left: 10px;
         padding-right: 10px;
         background-color: #e7e7e760;
@@ -58,5 +56,12 @@
         transition: max-height 0.3s ease;
       }
     }
+  }
+}
+
+@media (min-width: 930px) {
+  .about_collapse{
+    width: 90%;
+
   }
 }

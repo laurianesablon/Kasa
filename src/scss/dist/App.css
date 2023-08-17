@@ -68,12 +68,16 @@ footer p {
 }
 
 @media (min-width: 930px) {
-  header {
-    margin: 27px 100px;
-  }
   main {
     margin: 27px 100px;
   }
-}
-/*---MOBILE---*/
-/*# sourceMappingURL=App.css.map */
+  header {
+    margin: 27px 100px;
+  }
+  header nav ul {
+    font-size: 24px;
+  }
+  header nav a {
+    text-transform: capitalize !important;
+  }
+}/*# sourceMappingURL=App.css.map */

@@ -19,8 +19,7 @@ export default function About() {
 
   return (
     <Layout>
-
-      <img className="about_img" src={about_img} alt="about_img" />
+      <div className="about_img"></div>
        <div class="about_collapse">
 
         <div className="collapse_container">
