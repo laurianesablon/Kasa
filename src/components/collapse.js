@@ -16,7 +16,7 @@ export default function Collapse({ collapse_title, collapse_content }) {
       <div className="collapse_title" onClick={toggleCollapse}>
         <p>{collapse_title}</p>
         <svg
-          className={`${isCollapsed ? "arrowDown" : "collapsed"}`}
+          className={`${isCollapsed ? "arrowDown" : "arrowUp"}`}
           width="33"
           height="32"
           viewBox="0 0 33 32"

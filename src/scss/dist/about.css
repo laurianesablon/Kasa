@@ -7,12 +7,19 @@
 }
 
 .displayNone {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 500ms ease-in-out;
 }
 
 .arrowDown {
   transform: rotate(-180deg);
-  transition: 500ms;
+  transition: 500ms ease-in-out;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+  transition: 500ms ease-in-out;
 }
 
 .about_collapse {
@@ -58,11 +65,14 @@
 }
 .about_collapse .collapse_container .collapse_content.collapsed {
   max-height: 1000px;
-  transition: max-height 0.3s ease;
+  transition: max-height 500ms ease-in-out;
 }
 
 @media (min-width: 930px) {
   .about_collapse {
     width: 90%;
+  }
+  .about_img {
+    height: 111px;
   }
 }/*# sourceMappingURL=about.css.map */

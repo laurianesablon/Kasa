@@ -130,15 +130,15 @@
 }
 .housing_collapse .collapse_content.collapsed {
   max-height: 1000px;
-  transition: max-height 0.3s ease;
+  transition: max-height 500ms ease-in-out;
 }
-.housing_collapse .collapse_content.collapsed p {
+.housing_collapse .collapse p {
   width: 100%;
 }
-.housing_collapse .collapse_content.collapsed ul {
+.housing_collapse .collapse ul {
   padding-inline-start: 10px;
 }
-.housing_collapse .collapse_content.collapsed ul li {
+.housing_collapse .collapse ul li {
   list-style-type: none;
 }
 

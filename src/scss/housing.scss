@@ -131,17 +131,16 @@
     }
     &_content.collapsed {
       max-height: 1000px;
-      transition: max-height 0.3s ease;
-      p{
-        width: 100%;
-      }
-      ul{
-        padding-inline-start: 10px;
-        li{
+      transition: max-height 500ms ease-in-out;
+    }
+    p {
+      width: 100%;
+    }
+    ul {
+      padding-inline-start: 10px;
+      li {
         list-style-type: none;
       }
-      }
-      
     }
   }
 }
