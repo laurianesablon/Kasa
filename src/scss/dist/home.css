@@ -1,5 +1,5 @@
 /*---CARDS---*/
-.discoveryCard {
+.home_banner_img {
   height: 111px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -7,7 +7,7 @@
   font-weight: 500;
   width: 100%;
 }
-.discoveryCard p {
+.home_banner_img p {
   color: #fff;
   font-size: 150%;
   padding-top: 50px;

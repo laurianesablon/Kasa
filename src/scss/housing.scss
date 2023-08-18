@@ -61,7 +61,7 @@
       justify-content: center;
     }
   }
-  .rate-host-container {
+  .rate_host_container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -151,7 +151,7 @@
     .housing_info_container {
       flex-direction: row;
       justify-content: space-between;
-      .rate-host-container {
+      .rate_host_container {
         flex-direction: column;
       }
     }

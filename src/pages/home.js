@@ -24,7 +24,7 @@ for (let i = 0; i < 20; i++) {
 export default function Home() {
   return (
     <Layout>
-      <div className="discoveryCard">
+      <div className="home_banner_img">
         <p>Chez vous, partout et ailleurs</p>
       </div>
 

@@ -60,34 +60,34 @@
   align-items: center;
   justify-content: center;
 }
-.housing_info_container .rate-host-container {
+.housing_info_container .rate_host_container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
 }
-.housing_info_container .rate-host-container .host {
+.housing_info_container .rate_host_container .host {
   margin-top: 21px;
   display: flex;
   justify-content: flex-end;
   gap: 12px;
 }
-.housing_info_container .rate-host-container .host_name {
+.housing_info_container .rate_host_container .host_name {
   font-size: 18px;
   font-weight: 500;
   width: 73px;
   text-align: end;
 }
-.housing_info_container .rate-host-container .host_picture {
+.housing_info_container .rate_host_container .host_picture {
   border-radius: 50%;
   width: 64px;
   height: 64px;
 }
-.housing_info_container .rate-host-container .stars {
+.housing_info_container .rate_host_container .stars {
   display: flex;
   gap: 5px;
 }
-.housing_info_container .rate-host-container .stars .star {
+.housing_info_container .rate_host_container .stars .star {
   height: 35px;
 }
 
@@ -150,7 +150,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .main .housing_info_container .rate-host-container {
+  .main .housing_info_container .rate_host_container {
     flex-direction: column;
   }
   .main .housing_collapse {

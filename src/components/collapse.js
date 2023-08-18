@@ -6,7 +6,6 @@ export default function Collapse({ collapse_title, collapse_content }) {
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
   };
-  console.log(collapse_content);
   let layoutContent = <p>{collapse_content}</p>
   if(collapse_content instanceof Array){
     layoutContent = <ul>{collapse_content.map((item, index) => <li key={index}>{item}</li>)}</ul>
