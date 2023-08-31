@@ -15,7 +15,7 @@ export default function Housing() {
   const renderedTags = tags.map((tag, index) => <Tag key={index} tag={tag} />);
   return (
     <Layout>
-      <div class="main">
+      <div>
         <Carrousel data={housing} />
         <div className="housing_info_container">
           <div className="title_tags_container">

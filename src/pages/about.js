@@ -22,7 +22,7 @@ export default function About() {
   return (
     <Layout>
       <div className="about_banner_img"></div>
-      <div class="about_collapse">
+      <div className="about_collapse">
         <div className="collapse_container">{collapseItems}</div>
       </div>
     </Layout>
