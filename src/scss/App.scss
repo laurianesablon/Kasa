@@ -34,9 +34,6 @@ header {
         text-decoration: none;
         color: #ff6060;
 
-        li:hover {
-          text-decoration: underline;
-        }
       }
     }
   }
@@ -45,7 +42,9 @@ header {
     width: 145px;
   }
 }
-
+.active {
+  text-decoration: underline !important;
+}
 footer {
   background-color: black;
   color: white;

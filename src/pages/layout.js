@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../img/LOGO.svg";
 import LogoFooter from "../img/LOGO_footer.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,12 +12,22 @@ function Header() {
 
       <nav>
         <ul>
-          <Link className="home" to="/">
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
             <li>Accueil</li>
-          </Link>
-          <Link className="about" to="/about">
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
             <li>A Propos</li>
-          </Link>
+          </NavLink>
         </ul>
       </nav>
     </header>

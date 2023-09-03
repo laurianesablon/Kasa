@@ -98,11 +98,12 @@ header nav ul a {
   text-decoration: none;
   color: #ff6060;
 }
-header nav ul a li:hover {
-  text-decoration: underline;
-}
 header .logo {
   width: 145px;
+}
+
+.active {
+  text-decoration: underline !important;
 }
 
 footer {
