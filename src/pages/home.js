@@ -19,8 +19,6 @@ for (let i = 0; i < 20; i++) {
   });
 }
 
-
-
 export default function Home() {
   return (
     <Layout>

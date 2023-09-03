@@ -7,11 +7,11 @@ import Tag from "../components/tag";
 import Stars from "../components/stars";
 import { useParams } from "react-router-dom";
 
+
 export default function Housing() {
   let { id } = useParams();
   const housing = data.data.find((item) => item.id === id);
-  const { title, location, description, equipments, rating, tags, host } =
-    housing;
+  const { title, location, description, equipments, rating, tags, host } = housing;
   const renderedTags = tags.map((tag, index) => <Tag key={index} tag={tag} />);
   return (
     <Layout>
@@ -26,26 +26,14 @@ export default function Housing() {
           <div className="rate_host_container">
             <div className="host">
               <p className="host_name">{host.name}</p>
-              <img
-                src={host.picture}
-                className="host_picture"
-                alt="host"
-              />
+              <img src={host.picture} className="host_picture" alt="host" />
             </div>
-
             <Stars rating={rating} />
           </div>
         </div>
-
         <div className="housing_collapse">
-          <Collapse
-            collapse_title="Description"
-            collapse_content={description}
-          />
-          <Collapse
-            collapse_title="Equipements"
-            collapse_content={equipments}
-          />
+          <Collapse collapse_title="Description" collapse_content={description} />
+          <Collapse collapse_title="Equipements" collapse_content={equipments} />
         </div>
       </div>
     </Layout>
