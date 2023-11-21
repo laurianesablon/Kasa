@@ -12,11 +12,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/Kasa" element={<Home />} />
-          <Route path="Kasa/error" element={<Error />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/error" element={<Error />} />
           <Route path="*" element={<Navigate to="/error" />} />
-          <Route path="Kasa/about" element={<About />} />
-          <Route path="Kasa/housing/:id" element={<Housing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/housing/:id" element={<Housing />} />
         </Routes>
       </BrowserRouter>
     </div>
