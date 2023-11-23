@@ -4,13 +4,12 @@ import Home from "./pages/home";
 import Error from "./pages/error";
 import About from "./pages/about";
 import Housing from "./pages/housing";
-import { BrowserRouter, Routes, Route , Navigate} from "react-router-dom";
-
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/kasa">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/error" element={<Error />} />
@@ -22,6 +21,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
